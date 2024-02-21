@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-// font-family: 'Cormorant', serif;
-// font-family: 'Raleway', sans-serif;
-
-@import "gallery-flex";
+@import "gallery";
 @import "footer";
-
 
 body, html{
   background-color: #fff;
+  padding-bottom:60px;
 }
 
 h2{
@@ -18,7 +14,6 @@ h2{
   margin-top:30px;
   margin-bottom:30px;
   line-height: 1.5em;
-
 
   &.text-center{
     &::after{
@@ -59,14 +54,14 @@ p.bienvenida{
   font-size:40px;
   letter-spacing: 1px;
   margin: 0 auto 60px auto;
-}
-
-p.bienvenida a{
-  color: #000;
-  text-decoration: none;
-}
-p.bienvenida a:hover{
-  color: chocolate;
+  a{
+    color: chocolate;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
 }
 
 ul.menu-redes{
@@ -74,24 +69,20 @@ ul.menu-redes{
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding:15px;
-  margin:15px;
+}
 
-}ul.menu-redes li{
+ul.menu-redes li{
   display: block;
   font-size: 36px;
-  padding:10px 20px;
-
-}
-ul.menu-redes li a{
-  
-  color:#000;
-  transition: all 0.5s ease;
-}
-
-ul.menu-redes li a:hover{
-  color: chocolate;
-  transform: scale(0.7);
+  padding: 10px 20px;
+  li a{
+    color:#000;
+    transition: all 0.5s ease;
+    &:hover{
+      color: chocolate;
+      transform: scale(0.7);
+    }
+  }
 }
 
 @media (max-width: 575.98px){
@@ -104,29 +95,25 @@ ul.menu-redes li a:hover{
 ul{
   display: block;
   position: relative;
-  margin-top:30px;
-  margin-left:0;
-  padding-left:0;
-}
-
-ul li{
-  position: relative;
-  color: #fff;
-  margin-top: 10px;
-}
-
-ul li a{
-  text-decoration: none;
-  color: #333;
-  text-transform: uppercase;
-}
-
-ul li a:hover{
-  color: chocolate;
-}
-
-ul li span{
-  color:chocolate;
+  margin-top: 30px;
+  margin-left: 0;
+  padding-left: 0;
+  li{
+    position: relative;
+    color: #fff;
+    margin-top: 10px;
+    a{
+      text-decoration: none;
+      color: #333;
+      text-transform: uppercase;
+      &:hover{
+        color: chocolate;
+      }
+    }
+    span{
+      color:chocolate;
+    }
+  }
 }
 
 ul.list-certificados{
@@ -168,18 +155,10 @@ ul.list-certificados{
   text-align: center;
 }
 
-
 section{
   padding:30px 0;
 }
 
-.icon-list-container{
-  display: block;
-  position: relative;
-  width:100%;
-  padding:0;
-  margin:30px 0; 
-}
 
 ul.icon-list{
   display: flex;
@@ -187,15 +166,15 @@ ul.icon-list{
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 30px 0;
   padding: 0;
+  gap: 26px;
 
   li{
     display: block;
     font-size: 28px;
-    padding:10px;
-    margin: 0 5px;
     color: #000;
+    margin:0;
     i{
       &.fa-google{
         font-size: 26px !important;
@@ -272,8 +251,7 @@ ul.icon-list{
   z-index:9999;
 
   &.hidden{
-    bottom:-125px;
-
+    bottom: -125px;
   }
 
   &:hover{
@@ -281,7 +259,6 @@ ul.icon-list{
   }
 
 }
-
 
 .btn-cv{
   display: block;
@@ -296,6 +273,7 @@ ul.icon-list{
   padding: 15px 0;
   margin: 0 auto;
   transition: background-color .5s ease, transform .5s ease;
+  
   &:hover{
     background-color: #fff;
     color: chocolate;
@@ -303,4 +281,15 @@ ul.icon-list{
     text-decoration: none;
     transform: scale(1.1);
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
