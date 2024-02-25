@@ -134,18 +134,19 @@ ul.list-certificados{
       text-decoration: none;
       color: #333;
       letter-spacing: 1px;
-
-      strong{text-transform: uppercase;}
-      em{text-transform: capitalize;}
-      span{
-        font-size:11px;
-        color: chocolate;
-        text-transform: uppercase;
-      }
+      text-transform: none;
       &:hover{
         color: chocolate;
       }
-
+    }
+    strong{
+      font-weight: bold;
+    }
+    em{text-transform: capitalize;}
+    span{
+      font-size:11px;
+      color: chocolate;
+      text-transform: uppercase;
     }
   }
 }

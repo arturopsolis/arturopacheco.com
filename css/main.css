@@ -224,20 +224,21 @@ ul.list-certificados li a {
   text-decoration: none;
   color: #333;
   letter-spacing: 1px;
-}
-ul.list-certificados li a strong {
-  text-transform: uppercase;
-}
-ul.list-certificados li a em {
-  text-transform: capitalize;
-}
-ul.list-certificados li a span {
-  font-size: 11px;
-  color: chocolate;
-  text-transform: uppercase;
+  text-transform: none;
 }
 ul.list-certificados li a:hover {
   color: chocolate;
+}
+ul.list-certificados li strong {
+  font-weight: bold;
+}
+ul.list-certificados li em {
+  text-transform: capitalize;
+}
+ul.list-certificados li span {
+  font-size: 11px;
+  color: chocolate;
+  text-transform: uppercase;
 }
 
 .text-center {
