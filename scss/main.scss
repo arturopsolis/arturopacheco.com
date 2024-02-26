@@ -49,9 +49,8 @@ p{
 p.bienvenida{
   display: block;
   position: relative;
-  width:100%;
-  max-width: 860px;
-  font-size:40px;
+  width: 100%;
+  font-size: 40px;
   letter-spacing: 1px;
   margin: 0 auto 60px auto;
   a{
@@ -128,6 +127,12 @@ ul.list-certificados{
     position: relative;
     margin-bottom: 30px;
     line-height: 1.5em;
+
+    figure{
+      padding:0;
+      margin:0;
+    }
+
     a{
       font-family: 'Raleway', sans-serif;
       font-size:16px;
@@ -274,6 +279,7 @@ ul.icon-list{
   padding: 15px 0;
   margin: 0 auto;
   transition: background-color .5s ease, transform .5s ease;
+  text-decoration: none;
   
   &:hover{
     background-color: #fff;
@@ -293,4 +299,11 @@ ul.icon-list{
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
