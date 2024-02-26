@@ -3,3 +3,27 @@ footer{
     position:relative;
     padding:120px 0;
 }
+
+.btn-cv{
+    display: block;
+    position: relative;
+    font-weight: 600;
+    width: 242px;
+    text-align: center;
+    border: 2px solid transparent;
+    background-color: chocolate;
+    border-radius: 28px;
+    color: #fff;
+    padding: 15px 0;
+    margin: 0 auto;
+    transition: background-color .5s ease, transform .5s ease;
+    text-decoration: none;
+    
+    &:hover{
+      background-color: #fff;
+      color: chocolate;
+      border: 2px solid chocolate;
+      text-decoration: none;
+      transform: scale(1.1);
+    }
+  }
