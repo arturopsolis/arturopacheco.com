@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,600;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 .gallery-flex {
   display: flex;
   justify-content: center;
@@ -202,69 +202,73 @@ ul.menu-redes li li a:hover {
     letter-spacing: 1px;
   }
 }
-ul {
+ul.list-companies {
   display: block;
   position: relative;
   margin-top: 30px;
   margin-left: 0;
   padding-left: 0;
 }
-ul li {
+ul.list-companies li {
   position: relative;
   color: #fff;
   margin-top: 10px;
 }
-ul li a {
+ul.list-companies li a {
   text-decoration: none;
   color: #333;
   text-transform: uppercase;
 }
-ul li a:hover {
+ul.list-companies li a:hover {
   color: chocolate;
 }
-ul li span {
+ul.list-companies li span {
   color: chocolate;
 }
 
-ul.list-certificados {
+ul.list-certificates {
   display: block;
   position: relative;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
   margin-left: 0;
   padding-left: 0;
   list-style: none;
 }
-ul.list-certificados li {
+ul.list-certificates li {
   position: relative;
   margin-bottom: 30px;
   line-height: 1.5em;
-}
-ul.list-certificados li figure {
-  padding: 0;
-  margin: 0;
-}
-ul.list-certificados li a {
+  margin-bottom: 32px;
   font-family: "Raleway", sans-serif;
+}
+ul.list-certificates li h3 {
+  font-family: inherit;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+ul.list-certificates li p {
+  font-family: inherit;
+  text-transform: uppercase;
+  line-height: 1.5em;
   font-size: 16px;
+}
+ul.list-certificates li p span {
+  display: block;
+}
+ul.list-certificates li p a {
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
   color: #333;
   letter-spacing: 1px;
   text-transform: none;
-}
-ul.list-certificados li a:hover {
+  padding: 0;
   color: chocolate;
 }
-ul.list-certificados li strong {
-  font-weight: bold;
-}
-ul.list-certificados li em {
-  text-transform: capitalize;
-}
-ul.list-certificados li span {
-  font-size: 11px;
+ul.list-certificates li p a:hover {
   color: chocolate;
-  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .text-center {
@@ -339,6 +343,11 @@ ul.icon-list li i.fa-google {
   text-align: center;
   color: chocolate;
   font-size: 46px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
 }
 
 .btn-contacto {

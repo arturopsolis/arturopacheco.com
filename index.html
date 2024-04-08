@@ -187,7 +187,7 @@
             </div>
             <div class="row">
               <div class="col-md-6">
-                  <ul>
+                  <ul class="list-companies">
                       <li><a href="https://globant.com/" target="blank">globant</a> <span>2021-2024</span></li>
                       <li><a href="https://www.corazolana.com" target="blank">corazolana</a> <span>2019-2021</span></li>
                       <li><a href="https://xdesign.com.mx" target="blank">xdesign</a> <span>2019-2020</span></li>
@@ -197,7 +197,7 @@
               </div>
               <div class="col-md-6">
                 <nav>
-                    <ul>
+                    <ul class="list-companies">
                         <li><a href="https://www.santillana.com.mx/" target="blank">Santillana</a> <span>2016-2017</span></li>
                         <li><a href="https://mx.unoi.com/" target="blank">Sistema UNOi</a> <span>2015-2016</span></li>
                         <li><a href="https://www.amacc.org.mx/" target="blank">AMACC</a> <span>2014-2015</span></li>
@@ -215,107 +215,8 @@
             <div class="row">
               <div class="col-12">
                 <h2>Certificados en tecnología</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="list-certificados">
-                  <li>
-                    <figure>
-                      <a href="https://www.coursera.org/verify/X5878J9KQGZS" target="_blank">
-                        <figcaption>
-                          <strong>Developing Front-End Apps with React</strong><br>
-                          <em>IBM</em><br>
-                          <span>X5878J9KQGZS</span>
-                        </figcaption>
-                      </a>
-                    </figure>
-                  </li>
-                  <li>
-                    <figure>
-                      <a href="https://www.freecodecamp.org/certification/fcc9abb339b-24b4-464e-9960-2dac5d7054b8" target="_blank">
-                        <figcaption>
-                          <strong>Front End Development Libraries</strong><br>
-                          <em>Freecodecamp</em><br>
-                          <span>fcc9abb339b-24b4-464e-9960-2dac5d7054b8</span>
-                        </figcaption>
-                      </a>
-                    </figure>
-                  </li>
-                  <li>
-                    <figure>
-                      <a href="https://www.freecodecamp.org/certification/fcc9abb339b-24b4-464e-9960-2dac5d7054b8/javascript-algorithms-and-data-structures" target="_blank">
-                        <figcaption>
-                          <strong>Javascript Algorithms and Data Structures</strong><br>
-                          <em>Freecodecamp</em><br>
-                          <span>fcc9abb339b-24b4-464e-9960-2dac5d7054b8</span>
-                        </figcaption>
-                      </a>
-                    </figure>
-                  </li>
-                  <li>
-                    <figure>
-                      <a href="https://www.freecodecamp.org/certification/fcc9abb339b-24b4-464e-9960-2dac5d7054b8/responsive-web-design" target="_blank">
-                        <figcaption>
-                          <strong>Responsive Web Design</strong><br>
-                          <em>Freecodecamp</em><br>
-                          <span>fcc9abb339b-24b4-464e-9960-2dac5d7054b8</span>
-                        </figcaption>
-                      </a>
-                    </figure>
-                  </li>
-                </ul>
-                
-              </div>
-              <div class="col-md-6">
-                <ul class="list-certificados">  
-                  <li>
-                    <figure>
-                      <a href="https://platzi.com/@arturopacheco82/curso/1640-frontend-developer/diploma/detalle/" target="_blank">
-                        <figcaption>
-                          <strong>Frontend Developer</strong><br>
-                          <em>Platzi</em><br>
-                          <span>b54892c3-c7cf-422b-aec4-e903fc73b555</span>
-                        </figcaption>
-                      </a>
-                    </figure>
-                  </li>
-                  <li>
-                    <figure>
-                      <a href="https://www.coursera.org/account/accomplishments/verify/Q5V95CF9J6GS" target="_blank">
-                        <figcaption>
-                          <strong>Foundations of UX Design</strong><br>
-                          <em>Google</em><br>
-                          <span>Q5V95CF9J6GS</span>
-                        </figcaption>
-                      </a>
-                    </figure>
-                  </li>               
-                  <li>
-                    <figure>
-                      <a href="https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code" target="_blank">
-                        <figcaption>
-                          <strong>Fundamentos de Marketing Digital</strong><br>
-                          <em>Google Activate</em><br>
-                          <span>CEQ J43 DHK</span>
-                        </figcaption>
-                      </a>
-                    </figure>
-                  </li>
-                  <li>
-                    <figure>
-                      <a href="https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code" target="_blank">
-                        <figcaption>
-                          <strong>Comercio Electrónico</strong><br>
-                          <em>Google Activate</em><br>
-                          <span>WTD L4G 6Q7</span>
-                        </figcaption>
-                      </a>
-                    </figure>
-                  </li>
-                </ul>
-                
-              </div>
+                <ul class="list-certificates" id="certificates"></ul>
+              </div>                
             </div>
           </div>
         </section>
@@ -339,7 +240,6 @@
       <script src="vendor/wow/wow.js"></script>
       <script> new WOW().init(); </script>
       <script src="vendor/bootstrap-4.6.0-dist/js/bootstrap.js"></script>
-      <script src="js/main.js?ver=1605211804"></script>
       
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9H776VY0W"></script>
@@ -349,6 +249,8 @@
       gtag('js', new Date());
       gtag('config', 'G-H9H776VY0W');
       </script>
-      
+
+      <script type="module" src="js/main.js?ver=1605211804"></script>
+
   </body>
 </html>

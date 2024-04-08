@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,600;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "gallery";
 @import "footer";
 
@@ -92,7 +92,7 @@ ul.menu-redes li{
   }
 }
 
-ul{
+ul.list-companies{
   display: block;
   position: relative;
   margin-top: 30px;
@@ -116,44 +116,52 @@ ul{
   }
 }
 
-ul.list-certificados{
+
+ul.list-certificates{
   display: block;
   position: relative;
-  margin-top:30px;
+  margin-top:60px;
   margin-bottom:30px;
   margin-left:0;
   padding-left:0;
   list-style: none;
+
   li{
     position: relative;
     margin-bottom: 30px;
     line-height: 1.5em;
+    margin-bottom: 32px;
+    font-family: 'Raleway', sans-serif;
 
-    figure{
-      padding:0;
-      margin:0;
+    h3{
+      font-family: inherit;
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
     }
-
-    a{
-      font-family: 'Raleway', sans-serif;
-      font-size:16px;
-      text-decoration: none;
-      color: #333;
-      letter-spacing: 1px;
-      text-transform: none;
-      &:hover{
+    p{
+      font-family: inherit;
+      text-transform: uppercase;
+      line-height: 1.5em;
+      font-size: 16px;
+      span{
+        display: block;
+      }
+      a{
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+        color: #333;
+        letter-spacing: 1px;
+        text-transform: none;
+        padding:0;
         color: chocolate;
+        &:hover{
+          color: chocolate;
+          text-decoration: underline;
+        }
       }
     }
-    strong{
-      font-weight: bold;
-    }
-    em{text-transform: capitalize;}
-    span{
-      font-size:11px;
-      color: chocolate;
-      text-transform: uppercase;
-    }
+
   }
 }
 
@@ -217,8 +225,6 @@ ul.icon-list{
     text-align: center;
     font-size: 22px;
     font-family: 'Raleway', sans-serif;
-
-
     a{
       text-decoration: none;
       color: inherit;
@@ -235,6 +241,11 @@ ul.icon-list{
     color:chocolate;
     font-size: 46px;
   }
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  display: none
 }
 
 .btn-contacto{
