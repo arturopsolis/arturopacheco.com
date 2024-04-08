@@ -187,11 +187,11 @@ ul.menu-redes li {
   font-size: 36px;
   padding: 10px 20px;
 }
-ul.menu-redes li li a {
+ul.menu-redes li a {
   color: #000;
   transition: all 0.5s ease;
 }
-ul.menu-redes li li a:hover {
+ul.menu-redes li a:hover {
   color: chocolate;
   transform: scale(0.7);
 }

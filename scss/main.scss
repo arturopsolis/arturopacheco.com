@@ -75,7 +75,7 @@ ul.menu-redes li{
   display: block;
   font-size: 36px;
   padding: 10px 20px;
-  li a{
+  a{
     color:#000;
     transition: all 0.5s ease;
     &:hover{
@@ -245,7 +245,7 @@ ul.icon-list{
 
 .carousel-control-prev,
 .carousel-control-next{
-  display: none
+  display: none;
 }
 
 .btn-contacto{
