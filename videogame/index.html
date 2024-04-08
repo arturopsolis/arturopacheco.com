@@ -1,24 +1,6 @@
 ﻿<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      property="og:title"
-      content="Shut 'Em Up Retro Game Developed by Arturo Pacheco"
-    />
-    <meta
-      property="og:description"
-      content="Experience the nostalgia with our playable demo of 'Shut em up retro', crafted on the Pico-8 platform using LUA programming. Immerse yourself in vibrant pixel art, reminiscent of classic retro gaming, and challenge your skills in this action-packed adventure."
-    />
-    <meta
-      property="og:image"
-      content="https://www.somnum.net/arturopacheco/videogame/images/pico8-naves.png"
-    />
-    <meta
-      property="og:url"
-      content="https://www.somnum.net/arturopacheco/videogame/"
-    />
-    <title>PICO-8 Shut Em Up</title>
+    <title>PICO-8 Cartridge</title>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <script type="text/javascript">
       // Default shell for PICO-8 0.2.2 (includes @weeble's gamepad mod 1.0)
@@ -444,8 +426,8 @@
 
         if (!is_fullscreen)
           if (!p8_touch_detected)
+            // fullscreen: update every frame for safety. should be cheap!
             if (p8_update_layout_hash == update_hash) {
-              // fullscreen: update every frame for safety. should be cheap!
               // mobile: update every frame because nothing can be trusted
               //console.log("p8_update_layout(): skipping");
               requestAnimationFrame(p8_update_layout);
@@ -873,8 +855,9 @@
 
         for (j = 0; j < gamepad.buttons.length; j++)
           if (gamepad.buttons[j].value > 0 || gamepad.buttons[j].pressed) {
-            if (j < 4) button_state |= 0x10 << (((j + 1) / 2) & 1);
-            // 0 1 1 0 -- A,X -> O,X on xbox360
+            if (j < 4)
+              button_state |=
+                0x10 << (((j + 1) / 2) & 1); // 0 1 1 0 -- A,X -> O,X on xbox360
             else if (j >= 6 && j <= 8) button_state |= 0x40;
           }
 
@@ -1301,20 +1284,21 @@
       </script>
 
       <!-- Add content below the cart here -->
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-H9H776VY0W"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-H9H776VY0W");
-      </script>
     </div>
     <!-- body_0 -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H9H776VY0W"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-H9H776VY0W");
+    </script>
   </body>
 </html>
