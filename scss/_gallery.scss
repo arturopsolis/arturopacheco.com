@@ -7,17 +7,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 60px 0;
+    gap: 16px;
 
     .gallery-flex__item{
         position:relative;
-        width: 320px;
-        height: 320px;
+        width: 260px;
+        height: 260px;
         border-radius: 5px;
-        margin: 10px;
         overflow: hidden;
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease;
-        z-index:99;
+        z-index: 99;
 
         &::before{
             content: "";

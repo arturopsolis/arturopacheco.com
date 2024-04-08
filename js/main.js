@@ -5,7 +5,9 @@ function createCertificateElement(certificate) {
   listItem.innerHTML = `
     <h3 class="certificate-title">${certificate.name}</h3>
     <p>
-        <span class="certificate-institution">${certificate.institution}</span>
+        <span class="certificate-institution">
+          ${certificate.institution}, ${certificate.year}
+        </span>
         <span class="certificate-code">
             <a href="${certificate.link}" target="_blank">
                 ${certificate.code}
