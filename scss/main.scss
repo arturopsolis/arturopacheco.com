@@ -51,7 +51,7 @@ p.bienvenida{
   display: block;
   position: relative;
   width: 100%;
-  font-size: 40px;
+  font-size: 32px;
   letter-spacing: 1px;
   margin: 0 auto 60px auto;
   a{
@@ -69,6 +69,8 @@ ul.menu-redes{
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin:0;
+  padding:0;
 }
 
 ul.menu-redes li{
