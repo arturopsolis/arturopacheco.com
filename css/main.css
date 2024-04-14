@@ -132,9 +132,17 @@ footer {
   transform: scale(1.1);
 }
 
-body, html {
-  background-color: #f4f2ee;
+body {
   padding-bottom: 60px;
+  transition: background-color 0.5s ease;
+}
+body.light-theme {
+  background-color: #f4f2ee;
+  color: #000;
+}
+body.dark-theme {
+  background-color: #333;
+  color: white;
 }
 
 h2 {
@@ -165,6 +173,9 @@ h2::after {
   height: auto;
   margin: 30px auto;
   border-radius: 50%;
+}
+.avatar img:hover {
+  cursor: pointer;
 }
 
 p {
@@ -204,7 +215,7 @@ ul.menu-redes li {
   padding: 10px 20px;
 }
 ul.menu-redes li a {
-  color: #000;
+  color: inherit;
   transition: all 0.5s ease;
 }
 ul.menu-redes li a:hover {
@@ -227,12 +238,11 @@ ul.list-companies {
 }
 ul.list-companies li {
   position: relative;
-  color: #fff;
   margin-top: 10px;
 }
 ul.list-companies li a {
   text-decoration: none;
-  color: #333;
+  color: inherit;
   text-transform: uppercase;
 }
 ul.list-companies li a:hover {
@@ -260,7 +270,7 @@ ul.list-certificates li {
 }
 ul.list-certificates li h3 {
   font-family: inherit;
-  color: #000;
+  color: inherit;
   font-size: 18px;
   font-weight: 600;
 }
@@ -276,7 +286,7 @@ ul.list-certificates li p span {
 ul.list-certificates li p a {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
-  color: #333;
+  color: inherit;
   letter-spacing: 1px;
   text-transform: none;
   padding: 0;
@@ -308,7 +318,7 @@ ul.icon-list {
 ul.icon-list li {
   display: block;
   font-size: 28px;
-  color: #000;
+  color: inherit;
   margin: 0;
 }
 ul.icon-list li i.fa-google {
@@ -366,7 +376,7 @@ ul.icon-list li i.fa-google {
   display: none;
 }
 
-.btn-contacto {
+button.btn-contacto {
   display: block;
   position: fixed;
   bottom: 30px;
@@ -378,15 +388,17 @@ ul.icon-list li i.fa-google {
   background-size: auto 100px;
   background-position: 0 center;
   border-radius: 50%;
-  box-shadow: 0px 0px 16px 12px rgba(0, 0, 0, 0.05);
-  transition: bottom 0.5s ease-out, transform 0.5s ease;
+  box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.05);
+  transition: bottom 0.5s ease-out, transform 0.5s ease, box-shadow 1s ease;
   z-index: 9999;
+  border: none;
 }
-.btn-contacto.hidden {
+button.btn-contacto.hidden {
   bottom: -125px;
 }
-.btn-contacto:hover {
+button.btn-contacto:hover {
   transform: scale(1.2);
+  box-shadow: 0px 0px 16px 12px rgba(0, 0, 0, 0.05);
 }
 
 .visually-hidden {

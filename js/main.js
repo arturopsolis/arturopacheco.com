@@ -30,9 +30,6 @@ function displayCertificates() {
 let btnContacto = document.getElementById("btn-contacto");
 
 document.addEventListener("scroll", (event) => {
-  // handle scroll event
-  console.log(window.scrollY);
-
   if (window.scrollY < 176) {
     btnContacto.classList.add("hidden");
   } else if (window.scrollY > 176 && window.scrollY < 1398) {
@@ -51,3 +48,22 @@ document.addEventListener("scroll", (event) => {
 });
 
 window.onload = displayCertificates;
+
+function changeTheme() {
+  var body = document.body;
+  if (body.classList.contains("light-theme")) {
+    body.classList.remove("light-theme");
+    body.classList.add("dark-theme");
+  } else {
+    body.classList.remove("dark-theme");
+    body.classList.add("light-theme");
+  }
+}
+
+// Seleccionar todos los elementos con la clase "palette-switcher"
+let btnThemeSwitchers = document.querySelectorAll(".theme-switcher");
+
+// Iterar sobre cada elemento y agregar el evento de clic
+btnThemeSwitchers.forEach(function (btn) {
+  btn.addEventListener("click", changeTheme);
+});

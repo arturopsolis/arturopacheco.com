@@ -5,9 +5,21 @@
 
 // complementary #1E87D2
 
-body, html{
-  background-color: #f4f2ee;
+body{
+  
   padding-bottom:60px;
+  transition: background-color 0.5s ease;
+
+  &.light-theme{
+    background-color: #f4f2ee;
+    color:#000;
+  }
+
+  &.dark-theme{
+    background-color: #333;
+    color: white;
+  }
+
 }
 
 h2{
@@ -42,6 +54,10 @@ h2{
   height: auto;
   margin: 30px auto;
   border-radius: 50%;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 p{
@@ -80,7 +96,7 @@ ul.menu-redes li{
   font-size: 36px;
   padding: 10px 20px;
   a{
-    color:#000;
+    color: inherit;
     transition: all 0.5s ease;
     &:hover{
       color: chocolate;
@@ -104,11 +120,10 @@ ul.list-companies{
   padding-left: 0;
   li{
     position: relative;
-    color: #fff;
     margin-top: 10px;
     a{
       text-decoration: none;
-      color: #333;
+      color: inherit;
       text-transform: uppercase;
       &:hover{
         color: chocolate;
@@ -139,7 +154,7 @@ ul.list-certificates{
 
     h3{
       font-family: inherit;
-      color: #000;
+      color: inherit;
       font-size: 18px;
       font-weight: 600;
     }
@@ -154,7 +169,7 @@ ul.list-certificates{
       a{
         font-family: 'Raleway', sans-serif;
         text-decoration: none;
-        color: #333;
+        color: inherit;
         letter-spacing: 1px;
         text-transform: none;
         padding:0;
@@ -190,7 +205,7 @@ ul.icon-list{
   li{
     display: block;
     font-size: 28px;
-    color: #000;
+    color: inherit;
     margin:0;
     i{
       &.fa-google{
@@ -252,7 +267,7 @@ ul.icon-list{
   display: none;
 }
 
-.btn-contacto{
+button.btn-contacto{
   display: block;
   position: fixed;
   bottom:30px;
@@ -264,19 +279,22 @@ ul.icon-list{
   background-size: auto 100px;
   background-position: 0 center;
   border-radius: 50%;
-  box-shadow: 0px 0px 16px 12px rgb(0 0 0 / 5%);
-  transition: bottom 0.5s ease-out, transform 0.5s ease ;
+  box-shadow: 0px 0px 8px 6px rgb(0 0 0 / 5%);
+  transition: bottom 0.5s ease-out, transform 0.5s ease, box-shadow 1s ease;
   z-index:9999;
-
+  border: none;
+  
   &.hidden{
     bottom: -125px;
   }
 
   &:hover{
     transform: scale(1.2);
+    box-shadow: 0px 0px 16px 12px rgb(0 0 0 / 5%);
   }
 
 }
+
 
 .visually-hidden {
   position: absolute;
