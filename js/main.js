@@ -49,7 +49,9 @@ document.addEventListener("scroll", (event) => {
 
 window.onload = displayCertificates;
 
-function changeTheme() {
+function changeTheme(event) {
+  activeUnactiveNiceCircle(event.clientX, event.clientY);
+
   var body = document.body;
   if (body.classList.contains("light-theme")) {
     body.classList.remove("light-theme");
@@ -60,10 +62,17 @@ function changeTheme() {
   }
 }
 
-// Seleccionar todos los elementos con la clase "palette-switcher"
-let btnThemeSwitchers = document.querySelectorAll(".theme-switcher");
+let btnThemeSwitcher = document.getElementById("btn-contacto");
+btnThemeSwitcher.addEventListener("click", changeTheme);
 
-// Iterar sobre cada elemento y agregar el evento de clic
-btnThemeSwitchers.forEach(function (btn) {
-  btn.addEventListener("click", changeTheme);
-});
+function activeUnactiveNiceCircle(x, y) {
+  var elemento = document.getElementById("nice-circle");
+
+  if (elemento.classList.contains("active")) {
+    elemento.classList.remove("active");
+  } else {
+    elemento.style.left = x + "px"; // Establecer la posición izquierda del círculo
+    elemento.style.top = y + "px"; // Establecer la posición superior del círculo
+    elemento.classList.add("active");
+  }
+}
