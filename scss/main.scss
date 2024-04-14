@@ -3,7 +3,12 @@
 @import "gallery";
 @import "footer";
 
-// complementary #1E87D2
+// Color palette
+$rusty-red: #B64326;
+$moonstone-gray: #E5E3D2;
+$midnight-teal: #01353C;
+$aqua-sky: #00BACF;
+
 
 body{
   
@@ -11,13 +16,13 @@ body{
   transition: background-color 0.5s ease;
 
   &.light-theme{
-    background-color: #f4f2ee;
-    color:#000;
+    background-color: $moonstone-gray;
+    color: $midnight-teal;
   }
 
   &.dark-theme{
-    background-color: #333;
-    color: white;
+    background-color: $midnight-teal;
+    color: $moonstone-gray;
   }
 
 }
@@ -73,7 +78,7 @@ p.bienvenida{
   letter-spacing: 1px;
   margin: 0 auto 60px auto;
   a{
-    color: chocolate;
+    color: $rusty-red;
     text-decoration: none;
     &:hover{
       text-decoration: underline;
@@ -99,7 +104,7 @@ ul.menu-redes li{
     color: inherit;
     transition: all 0.5s ease;
     &:hover{
-      color: chocolate;
+      color: $rusty-red;
       transform: scale(0.7);
     }
   }
@@ -126,11 +131,11 @@ ul.list-companies{
       color: inherit;
       text-transform: uppercase;
       &:hover{
-        color: chocolate;
+        color:$rusty-red;
       }
     }
     span{
-      color:chocolate;
+      color:$rusty-red;
     }
   }
 }
@@ -173,9 +178,9 @@ ul.list-certificates{
         letter-spacing: 1px;
         text-transform: none;
         padding:0;
-        color: chocolate;
+        color: $rusty-red;
         &:hover{
-          color: chocolate;
+          color: $rusty-red;
           text-decoration: underline;
         }
       }
@@ -248,7 +253,7 @@ ul.icon-list{
       text-decoration: none;
       color: inherit;
       &:hover{
-        color:chocolate;
+        color:$rusty-red;
       }
     }
   }
@@ -257,7 +262,7 @@ ul.icon-list{
     position: relative;
     margin:0 auto;
     text-align: center;
-    color:chocolate;
+    color:$rusty-red;
     font-size: 46px;
   }
 }
@@ -274,7 +279,7 @@ button.btn-contacto{
   right:30px;
   width:100px;
   height:100px;
-  background-color: chocolate;
+  background-color: $rusty-red;
   background-image: url("../images/avatar-sprite.png");
   background-size: auto 100px;
   background-position: 0 center;

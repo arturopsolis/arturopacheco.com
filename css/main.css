@@ -137,12 +137,12 @@ body {
   transition: background-color 0.5s ease;
 }
 body.light-theme {
-  background-color: #f4f2ee;
-  color: #000;
+  background-color: #E5E3D2;
+  color: #01353C;
 }
 body.dark-theme {
-  background-color: #333;
-  color: white;
+  background-color: #01353C;
+  color: #E5E3D2;
 }
 
 h2 {
@@ -192,7 +192,7 @@ p.bienvenida {
   margin: 0 auto 60px auto;
 }
 p.bienvenida a {
-  color: chocolate;
+  color: #B64326;
   text-decoration: none;
 }
 p.bienvenida a:hover {
@@ -219,7 +219,7 @@ ul.menu-redes li a {
   transition: all 0.5s ease;
 }
 ul.menu-redes li a:hover {
-  color: chocolate;
+  color: #B64326;
   transform: scale(0.7);
 }
 
@@ -246,10 +246,10 @@ ul.list-companies li a {
   text-transform: uppercase;
 }
 ul.list-companies li a:hover {
-  color: chocolate;
+  color: #B64326;
 }
 ul.list-companies li span {
-  color: chocolate;
+  color: #B64326;
 }
 
 ul.list-certificates {
@@ -290,10 +290,10 @@ ul.list-certificates li p a {
   letter-spacing: 1px;
   text-transform: none;
   padding: 0;
-  color: chocolate;
+  color: #B64326;
 }
 ul.list-certificates li p a:hover {
-  color: chocolate;
+  color: #B64326;
   text-decoration: underline;
 }
 
@@ -360,14 +360,14 @@ ul.icon-list li i.fa-google {
   color: inherit;
 }
 .tesmonialItem p.quote-author a:hover {
-  color: chocolate;
+  color: #B64326;
 }
 .tesmonialItem div.quote-icon {
   display: block;
   position: relative;
   margin: 0 auto;
   text-align: center;
-  color: chocolate;
+  color: #B64326;
   font-size: 46px;
 }
 
@@ -383,7 +383,7 @@ button.btn-contacto {
   right: 30px;
   width: 100px;
   height: 100px;
-  background-color: chocolate;
+  background-color: #B64326;
   background-image: url("../images/avatar-sprite.png");
   background-size: auto 100px;
   background-position: 0 center;
