@@ -117,6 +117,7 @@ ul.list-companies {
 ul.list-companies li {
   position: relative;
   margin-top: 10px;
+  list-style: none;
 }
 ul.list-companies li a {
   text-decoration: none;

@@ -62,8 +62,13 @@ function changeTheme(event) {
   }
 }
 
-let btnThemeSwitcher = document.getElementById("btn-contacto");
-btnThemeSwitcher.addEventListener("click", changeTheme);
+// Seleccionar todos los elementos con la clase "palette-switcher"
+let btnThemeSwitchers = document.querySelectorAll(".theme-switcher");
+
+// Iterar sobre cada elemento y agregar el evento de clic
+btnThemeSwitchers.forEach(function (btn) {
+  btn.addEventListener("click", changeTheme);
+});
 
 function activeUnactiveNiceCircle(x, y) {
   var elemento = document.getElementById("nice-circle");
