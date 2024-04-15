@@ -14,6 +14,7 @@ body.dark-theme {
 body.dark-theme p.bienvenida a,
 body.dark-theme ul.list-companies li span,
 body.dark-theme ul.list-certificates li p a,
+body.dark-theme ul.menu-redes li a:hover,
 body.dark-theme .tesmonialItem div.quote-icon {
   color: #00BACF;
 }
