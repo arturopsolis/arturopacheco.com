@@ -11,7 +11,7 @@ footer{
     width: 242px;
     text-align: center;
     border: 2px solid transparent;
-    background-color: chocolate;
+    background-color: $rusty-red;
     border-radius: 28px;
     color: #fff;
     padding: 15px 0;
@@ -20,10 +20,12 @@ footer{
     text-decoration: none;
     
     &:hover{
-      background-color: #fff;
-      color: chocolate;
-      border: 2px solid chocolate;
+      /* background-color: #fff;
+      color: $rusty-red;
+      border: 2px solid $rusty-red;
+      text-decoration: none; 
+      transform: scale(1.1);*/
       text-decoration: none;
-      transform: scale(1.1);
+      color: #fff;
     }
   }

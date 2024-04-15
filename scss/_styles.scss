@@ -19,6 +19,17 @@ body{
 
   &.dark-theme{
     color: $moonstone-gray;
+
+    p.bienvenida a,
+    ul.list-companies li span,
+    ul.list-certificates li p a,
+    .tesmonialItem div.quote-icon{
+        color: $aqua-sky;
+    }
+    h2::after,
+    .btn-cv {
+        background-color: $aqua-sky;
+    }
   }
 
 }
@@ -31,8 +42,9 @@ body{
   border-radius: 50%;
   background-color: $midnight-teal;
   transition: all ease 0.7s;
+  z-index: -1;
   &.active {
-    transform: scale(5000);
+    transform: scale(5000); // 5000
     transition: all ease-in 0.7s;
   }
 }
@@ -58,7 +70,7 @@ h2{
     width:40px;
     height:5px;
     margin-top:15px;
-    background-color: #d2691e;
+    background-color: $rusty-red;
   }
 }
 

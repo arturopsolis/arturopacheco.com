@@ -11,6 +11,16 @@ body.light-theme {
 body.dark-theme {
   color: #E5E3D2;
 }
+body.dark-theme p.bienvenida a,
+body.dark-theme ul.list-companies li span,
+body.dark-theme ul.list-certificates li p a,
+body.dark-theme .tesmonialItem div.quote-icon {
+  color: #00BACF;
+}
+body.dark-theme h2::after,
+body.dark-theme .btn-cv {
+  background-color: #00BACF;
+}
 
 .nice-circle {
   display: block;
@@ -20,6 +30,7 @@ body.dark-theme {
   border-radius: 50%;
   background-color: #01353C;
   transition: all ease 0.7s;
+  z-index: -1;
 }
 .nice-circle.active {
   transform: scale(5000);
@@ -44,7 +55,7 @@ h2::after {
   width: 40px;
   height: 5px;
   margin-top: 15px;
-  background-color: #d2691e;
+  background-color: #B64326;
 }
 
 .avatar img {
@@ -412,7 +423,7 @@ footer {
   width: 242px;
   text-align: center;
   border: 2px solid transparent;
-  background-color: chocolate;
+  background-color: #B64326;
   border-radius: 28px;
   color: #fff;
   padding: 15px 0;
@@ -421,11 +432,13 @@ footer {
   text-decoration: none;
 }
 .btn-cv:hover {
-  background-color: #fff;
-  color: chocolate;
-  border: 2px solid chocolate;
+  /* background-color: #fff;
+  color: $rusty-red;
+  border: 2px solid $rusty-red;
+  text-decoration: none; 
+  transform: scale(1.1);*/
   text-decoration: none;
-  transform: scale(1.1);
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
