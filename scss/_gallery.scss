@@ -92,6 +92,7 @@
             z-index:98;
             opacity:0;
             transition: opacity 0.5s ease;
+            color: $moonstone-gray;
             &::after{
                 display: block;
                 position:relative;
@@ -99,7 +100,7 @@
                 width:0;
                 height:5px;
                 margin-top:5px;
-                background-color: chocolate;
+                background-color: $rusty-red;
                 transition:width 0.5s ease;
             }
         }
