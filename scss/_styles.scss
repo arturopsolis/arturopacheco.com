@@ -12,6 +12,10 @@ body{
   transition: background-color 1s ease;
   background-color: #e0dacf;
 
+  @media (max-width: 991.98px) {
+    padding: 0 15px;
+  }
+
   &.light-theme{
     color: $midnight-teal;
   }
@@ -56,6 +60,15 @@ h2{
   margin-top:30px;
   margin-bottom:30px;
   line-height: 1.5em;
+  font-size: 2em;
+
+  @media (max-width: 575.98px){
+    font-size: 1.2em;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 1.8em;
+  }
 
   &.text-center{
     &::after{
@@ -83,6 +96,9 @@ h2{
   height: auto;
   margin: 30px auto;
   border-radius: 50%;
+  @media (max-width: 575.98px){
+    width: 120px;
+  }
 }
 
 p{
@@ -97,6 +113,12 @@ p.bienvenida{
   font-size: 32px;
   letter-spacing: 1px;
   margin: 0 auto 60px auto;
+
+  @media (max-width: 575.98px){
+    font-size:28px;
+    letter-spacing: 1px;
+  }
+
   a{
     color: $rusty-red;
     text-decoration: none;
@@ -120,6 +142,11 @@ ul.menu-redes li{
   display: block;
   font-size: 36px;
   padding: 10px 20px;
+
+  @media (max-width: 575.98px){
+    font-size: 26px;
+  }
+
   a{
     color: inherit;
     transition: all 0.5s ease;
@@ -127,13 +154,6 @@ ul.menu-redes li{
       color: $rusty-red;
       transform: scale(0.7);
     }
-  }
-}
-
-@media (max-width: 575.98px){
-  p.bienvenida{
-    font-size:28px;
-    letter-spacing: 1px;
   }
 }
 
@@ -234,6 +254,12 @@ ul.icon-list{
     font-size: 28px;
     color: inherit;
     margin:0;
+
+    
+    @media (max-width: 575.98px){
+      font-size: 26px;
+    }
+
     i{
       &.fa-google{
         font-size: 26px !important;
@@ -266,11 +292,17 @@ ul.icon-list{
     text-align: center;
     font-weight: 600;
     font-size: 32px;
+    @media (max-width: 575.98px){
+      font-size: 28px;
+  }
   }
   p.quote-author{
     text-align: center;
     font-size: 22px;
     font-family: 'Raleway', sans-serif;
+    @media (max-width: 575.98px){
+      font-size: 18px;
+    }
     a{
       text-decoration: none;
       color: $rusty-red;
@@ -318,6 +350,11 @@ button.btn-contacto{
   &:hover{
     transform: scale(1.2);
     box-shadow: 0px 0px 16px 12px rgb(0 0 0 / 5%);
+  }
+
+  @media (max-width: 575.98px){
+    bottom:15px;
+    right:15px;
   }
 
 }

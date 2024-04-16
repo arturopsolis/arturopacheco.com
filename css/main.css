@@ -5,6 +5,11 @@ body {
   transition: background-color 1s ease;
   background-color: #e0dacf;
 }
+@media (max-width: 991.98px) {
+  body {
+    padding: 0 15px;
+  }
+}
 body.light-theme {
   color: #01353C;
 }
@@ -45,6 +50,17 @@ h2 {
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 1.5em;
+  font-size: 2em;
+}
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h2 {
+    font-size: 1.8em;
+  }
 }
 h2.text-center::after {
   margin-left: auto;
@@ -69,6 +85,11 @@ h2::after {
   margin: 30px auto;
   border-radius: 50%;
 }
+@media (max-width: 575.98px) {
+  .avatar img {
+    width: 120px;
+  }
+}
 
 p {
   font-family: "Cormorant", serif;
@@ -82,6 +103,12 @@ p.bienvenida {
   font-size: 32px;
   letter-spacing: 1px;
   margin: 0 auto 60px auto;
+}
+@media (max-width: 575.98px) {
+  p.bienvenida {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
 }
 p.bienvenida a {
   color: #B64326;
@@ -106,6 +133,11 @@ ul.menu-redes li {
   font-size: 36px;
   padding: 10px 20px;
 }
+@media (max-width: 575.98px) {
+  ul.menu-redes li {
+    font-size: 26px;
+  }
+}
 ul.menu-redes li a {
   color: inherit;
   transition: all 0.5s ease;
@@ -115,12 +147,6 @@ ul.menu-redes li a:hover {
   transform: scale(0.7);
 }
 
-@media (max-width: 575.98px) {
-  p.bienvenida {
-    font-size: 28px;
-    letter-spacing: 1px;
-  }
-}
 ul.list-companies {
   display: block;
   position: relative;
@@ -215,6 +241,11 @@ ul.icon-list li {
   color: inherit;
   margin: 0;
 }
+@media (max-width: 575.98px) {
+  ul.icon-list li {
+    font-size: 26px;
+  }
+}
 ul.icon-list li i.fa-google {
   font-size: 26px !important;
 }
@@ -244,10 +275,20 @@ ul.icon-list li i.fa-google {
   font-weight: 600;
   font-size: 32px;
 }
+@media (max-width: 575.98px) {
+  .tesmonialItem p.quote {
+    font-size: 28px;
+  }
+}
 .tesmonialItem p.quote-author {
   text-align: center;
   font-size: 22px;
   font-family: "Raleway", sans-serif;
+}
+@media (max-width: 575.98px) {
+  .tesmonialItem p.quote-author {
+    font-size: 18px;
+  }
 }
 .tesmonialItem p.quote-author a {
   text-decoration: none;
@@ -294,6 +335,12 @@ button.btn-contacto:hover {
   transform: scale(1.2);
   box-shadow: 0px 0px 16px 12px rgba(0, 0, 0, 0.05);
 }
+@media (max-width: 575.98px) {
+  button.btn-contacto {
+    bottom: 15px;
+    right: 15px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -329,7 +376,7 @@ ul.list-certificates li p span a {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 60px 0;
-  gap: 16px;
+  gap: 40px 16px;
 }
 .gallery-flex .gallery-flex__item {
   position: relative;
@@ -338,6 +385,12 @@ ul.list-certificates li p span a {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 99;
+}
+@media (max-width: 575.98px) {
+  .gallery-flex .gallery-flex__item {
+    width: 160px;
+    height: 160px;
+  }
 }
 .gallery-flex .gallery-flex__item:hover {
   z-index: 100;

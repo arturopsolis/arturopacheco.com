@@ -7,7 +7,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 60px 0;
-    gap: 16px;
+    gap: 40px 16px;
 
     .gallery-flex__item{
         position:relative;
@@ -16,6 +16,11 @@
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease;
         z-index: 99;
+
+        @media (max-width: 575.98px){
+            width: 160px;
+            height: 160px;
+        }
 
         &:hover{
             z-index:100;
