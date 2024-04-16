@@ -50,7 +50,7 @@ document.addEventListener("scroll", (event) => {
 window.onload = displayCertificates;
 
 function changeTheme(event) {
-  activeUnactiveNiceCircle(event.clientX, event.clientY);
+  niceCircleToggle(event.clientX, event.clientY);
 
   var body = document.body;
   if (body.classList.contains("light-theme")) {
@@ -70,14 +70,17 @@ btnThemeSwitchers.forEach(function (btn) {
   btn.addEventListener("click", changeTheme);
 });
 
-function activeUnactiveNiceCircle(x, y) {
+function niceCircleToggle(x, y) {
   var elemento = document.getElementById("nice-circle");
+  elemento.style.left = x + "px";
+  elemento.style.top = y + "px";
 
-  if (elemento.classList.contains("active")) {
-    elemento.classList.remove("active");
-  } else {
-    elemento.style.left = x + "px"; // Establecer la posición izquierda del círculo
-    elemento.style.top = y + "px"; // Establecer la posición superior del círculo
-    elemento.classList.add("active");
-  }
+  // Usamos setTimeout para agregar o quitar la clase después de un pequeño retraso
+  setTimeout(function () {
+    if (elemento.classList.contains("active")) {
+      elemento.classList.remove("active");
+    } else {
+      elemento.classList.add("active");
+    }
+  }, 100);
 }

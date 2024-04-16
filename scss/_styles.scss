@@ -9,8 +9,8 @@ $aqua-sky: #00BACF;
 
 body{
   padding-bottom:60px;
-  transition: all 1s ease;
-  background-color: $moonstone-gray;
+  transition: background-color 1s ease;
+  background-color: #e0dacf;
 
   &.light-theme{
     color: $midnight-teal;
@@ -23,7 +23,8 @@ body{
     ul.list-companies li span,
     ul.list-certificates li p a,
     ul.menu-redes li a:hover,
-    .tesmonialItem div.quote-icon{
+    .tesmonialItem div.quote-icon,
+    .tesmonialItem p.quote-author a{
         color: $aqua-sky;
     }
     h2::after,
@@ -45,7 +46,7 @@ body{
   z-index: -1;
   &.active {
     transform: scale(5000); // 5000
-    transition: all ease-in 0.7s;
+    transition: all ease 0.7s;
   }
 }
 
@@ -71,6 +72,7 @@ h2{
     height:5px;
     margin-top:15px;
     background-color: $rusty-red;
+    transition: background-color 1s ease;
   }
 }
 
@@ -187,6 +189,7 @@ ul.list-certificates{
       text-transform: uppercase;
       line-height: 1.5em;
       font-size: 16px;
+      color: inherit;
       span{
         display: block;
       }
@@ -270,7 +273,7 @@ ul.icon-list{
     font-family: 'Raleway', sans-serif;
     a{
       text-decoration: none;
-      color: inherit;
+      color: $rusty-red;
       &:hover{
         color:$rusty-red;
       }
@@ -336,4 +339,13 @@ button.btn-contacto{
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
+}
+
+p, a, ul li, h2, 
+.quote-icon,
+ul.list-companies li span,
+ul.list-companies li a,
+ul.list-certificates li p span,
+ul.list-certificates li p span a{
+  transition: color 1s ease;
 }
