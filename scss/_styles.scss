@@ -32,7 +32,8 @@ body{
         color: $aqua-sky;
     }
     h2::after,
-    .btn-cv {
+    .btn-cv,
+    .gallery-flex__item .gallery-flex__caption::after{
         background-color: $aqua-sky;
     }
   }

@@ -25,7 +25,8 @@ body.dark-theme .tesmonialItem p.quote-author a {
   color: #00BACF;
 }
 body.dark-theme h2::after,
-body.dark-theme .btn-cv {
+body.dark-theme .btn-cv,
+body.dark-theme .gallery-flex__item .gallery-flex__caption::after {
   background-color: #00BACF;
 }
 
