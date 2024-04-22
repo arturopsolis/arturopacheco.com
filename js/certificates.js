@@ -42,14 +42,14 @@ const certificates = [
     year: 2021,
   },
   {
-    name: "Fundamentos de Marketing Digital",
+    name: "Fundamentals of Digital Marketing",
     institution: "Google Activate",
     link: "https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code",
     code: "CEQ J43 DHK",
     year: 2021,
   },
   {
-    name: "Comercio Electrónico",
+    name: "E-commerce",
     institution: "Google Activate",
     link: "https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code",
     code: "WTD L4G 6Q7",
