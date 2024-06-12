@@ -1,7 +1,18 @@
 ﻿<html>
   <head>
-    <title>PICO-8 Cartridge</title>
+    <title>Shu'em Up - PICO 8 videogame</title>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Retro Shut'Em Up Game | Pico 8" />
+    <meta property="og:description" content="Retro Shut'Em Up Game" />
+    <meta
+      property="og:image"
+      content="https://naves.somnum.net/images/pico8-naves.png"
+    />
+
+    <meta property="og:url" content="https://naves.somnum.net/" />
+    <meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon-naves.png" />
     <script type="text/javascript">
       // Default shell for PICO-8 0.2.2 (includes @weeble's gamepad mod 1.0)
       // This file is available under a CC0 license https://creativecommons.org/share-your-work/public-domain/cc0/
@@ -426,8 +437,8 @@
 
         if (!is_fullscreen)
           if (!p8_touch_detected)
-            // fullscreen: update every frame for safety. should be cheap!
             if (p8_update_layout_hash == update_hash) {
+              // fullscreen: update every frame for safety. should be cheap!
               // mobile: update every frame because nothing can be trusted
               //console.log("p8_update_layout(): skipping");
               requestAnimationFrame(p8_update_layout);
@@ -855,9 +866,8 @@
 
         for (j = 0; j < gamepad.buttons.length; j++)
           if (gamepad.buttons[j].value > 0 || gamepad.buttons[j].pressed) {
-            if (j < 4)
-              button_state |=
-                0x10 << (((j + 1) / 2) & 1); // 0 1 1 0 -- A,X -> O,X on xbox360
+            if (j < 4) button_state |= 0x10 << (((j + 1) / 2) & 1);
+            // 0 1 1 0 -- A,X -> O,X on xbox360
             else if (j >= 6 && j <= 8) button_state |= 0x40;
           }
 
@@ -1284,6 +1294,14 @@
       </script>
 
       <!-- Add content below the cart here -->
+      <p style="text-align: center">
+        <a
+          href="https://www.somnum.net"
+          target="_blank"
+          style="color: grey; font-family: Arial"
+          >Developed by SOMNUM</a
+        >
+      </p>
     </div>
     <!-- body_0 -->
 
