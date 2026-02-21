@@ -381,6 +381,105 @@ ul.list-certificates li p span a {
   margin: 60px 0;
   gap: 40px 16px;
 }
+.gallery-flex .gallery-flex__item {
+  position: relative;
+  width: 208px;
+  height: 208px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+@media (max-width: 575.98px) {
+  .gallery-flex .gallery-flex__item {
+    width: 160px;
+    height: 160px;
+  }
+}
+.gallery-flex .gallery-flex__item:hover {
+  z-index: 100;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.06);
+  cursor: pointer;
+}
+.gallery-flex .gallery-flex__item:hover img.gallery-flex__image {
+  transform: scale(1.5);
+}
+.gallery-flex .gallery-flex__item:hover .gallery-flex__caption {
+  opacity: 1;
+}
+.gallery-flex .gallery-flex__item:hover a::before {
+  opacity: 0.7;
+  height: 100%;
+}
+.gallery-flex .gallery-flex__item:hover .gallery-flex__caption::after {
+  width: 10%;
+}
+.gallery-flex .gallery-flex__item img.gallery-flex__image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
+}
+.gallery-flex .gallery-flex__item a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.gallery-flex .gallery-flex__item a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  background-color: #000;
+  z-index: 98;
+  transition: all 0.5s ease;
+}
+.gallery-flex .gallery-flex__item .gallery-flex__caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  z-index: 98;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: #E5E3D2;
+}
+.gallery-flex .gallery-flex__item .gallery-flex__caption::after {
+  display: block;
+  position: relative;
+  content: "";
+  width: 0;
+  height: 5px;
+  margin-top: 5px;
+  background-color: #B64326;
+  transition: width 0.5s ease;
+}
+.gallery-flex .gallery-flex__item .gallery-flex__description {
+  display: block;
+  position: relative;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  transition: color 1s ease;
+}
 
 footer {
   display: block;
